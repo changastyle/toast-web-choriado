@@ -1,0 +1,24 @@
+<html>
+    <head>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+         <script type="text/javascript" src="jquery.toast.min.js"></script>
+         <link rel="stylesheet" href="jquery.toast.min.css">
+    </head>
+    <body>
+        <button onclick="toast()">TOAST</button>
+    </body>
+    <script>
+        function toast()
+        {
+            $.toast(
+            {
+                text:"Lorem ipsum dolor sit amet",
+                showHideTransition: 'slide',
+                icon: 'success',
+                bgColor: '#1abc9c',
+                textColor: 'white',
+                position: 'top-right'
+            });
+        }
+    </script>
+</html>
